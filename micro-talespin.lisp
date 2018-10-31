@@ -442,10 +442,11 @@
         (or (equal ',actor ',object)
             (doit (un-grasp ',actor ',object)))))
 
+; cmartens - fixed typo: (peruade ',actor
 (defun dprox-plan2 (actor object new-object)
   `(and (not (equal ',actor ',object))
         (member ',object *personae*)
-        (peruade ',actor
+        (persuade ',actor
                  ',object
                  (ptrans ',object
                          ',object
